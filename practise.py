@@ -40,13 +40,55 @@ except ValueError:
     print("Error: Please enter a valid number!")
 """
 #try except with finally
-try:
+'''try:
     file=open("text.txt","r")
     cont=file.read()
     print(cont)
 except FileNotFoundError:
     print("File not found")
 finally:
-    print("Trail successful")
+    print("Trail successful")'''
+
+#odd or even
+'''n=int(input("Enter a number to check odd or even : "))
+if(n%2==0):
+    print("The given number is even")
+else:
+    print("the given number is odd")'''
+
+#celsius to fahrenheit
+'''def CtoF():
+    try:
+       c=float(input("Enter the temperature in Celsius: "))
+       f=(c*(9/5)+32)
+       print("The Fahrenheit value is ",f)
+    except:
+        print("Enter a valid value")
+    finally:
+        print("Program completed")
+
+CtoF()'''
+
+def fact(n):
+    f=1
+    for i in range(1,n+1):
+        f*=i
+    return f
+
+try:
+    n=int(input("enter number"))
+    if(n>0):
+       print(f"factorial of {n} is fact{n}")
+
+    else:
+        print('enter valid value')
+except:
+        print("Enter a valid number")
+finally:
+        print("Program completed")
+
+fact()
+
+
 
 
