@@ -78,7 +78,7 @@ def fact(n):
 try:
     n=int(input("enter number"))
     if(n>0):
-       print(f"factorial of {n} is fact{n}")
+       print(f"factorial of {n} is ",fact(n))
 
     else:
         print('enter valid value')
@@ -87,8 +87,19 @@ except:
 finally:
         print("Program completed")
 
-fact()
+fact(n)
+#prime number
+'''def primeORnot(n):
+    if(n<=1):
+        print("The number is not a prime")
+    elif(n==2):
+        print("the number is prime")
+    else:
+        for i  in range(2,int(n**0.5)+1):
+            if(n%i==0):
+                print("The number is not a prime")
+            else:
+                print("the number is prime")
 
-
-
-
+num=int(input("enter number"))
+primeORnot(num)'''
