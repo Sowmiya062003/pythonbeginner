@@ -69,7 +69,7 @@ else:
 
 CtoF()'''
 
-def fact(n):
+'''def fact(n):
     f=1
     for i in range(1,n+1):
         f*=i
@@ -87,7 +87,7 @@ except:
 finally:
         print("Program completed")
 
-fact(n)
+fact(n)'''
 #prime number
 '''def primeORnot(n):
     if(n<=1):
@@ -103,3 +103,27 @@ fact(n)
 
 num=int(input("enter number"))
 primeORnot(num)'''
+#fibonacci series
+
+def fibo(n):
+    if n==1:
+        return [0]
+    elif n==0:
+        return [0,1]
+    fib_series=[0,1]
+    for i in range(2,n):
+        fib_series.append(fib_series[i-1]+fib_series[i-2])
+    return fib_series
+try:
+    num=int(input("enter the range"))
+    if(num<1):
+        print('Enter a valid number')
+    else:
+        print(f"Fibonacci series of {num} is : {fibo(num)}")
+
+except ValueError:
+    print("Enter a valid integer")
+finally:
+    print("Program completed")
+
+
